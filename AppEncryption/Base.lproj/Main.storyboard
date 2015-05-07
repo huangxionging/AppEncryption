@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8hx-Ns-ugi">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--First Page View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="FirstPageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="urJ-hw-KNp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2781" y="-877"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="oeG-az-AnD">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="8hx-Ns-ugi" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="AYP-hc-UDY">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="x3u-Hc-Bxp" kind="relationship" relationship="viewControllers" id="dlN-TC-JEm"/>
+                        <segue destination="vZD-RK-4Eb" kind="relationship" relationship="viewControllers" id="Zwm-jI-cgu"/>
+                        <segue destination="WzR-rL-H2z" kind="relationship" relationship="viewControllers" id="9fk-ia-4bB"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fgI-Wt-dR7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="-75"/>
+        </scene>
+        <!--My View Controller-->
+        <scene sceneID="ygp-lE-iSr">
+            <objects>
+                <viewController id="M9K-i2-r9L" customClass="MyViewController" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="gLP-sg-CPo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pnq-0A-uvp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2781" y="-224"/>
+        </scene>
+        <!--Setting Table View Controller-->
+        <scene sceneID="ljV-sy-8Fd">
+            <objects>
+                <tableViewController hidesBottomBarWhenPushed="YES" id="Q7j-1B-byB" customClass="SettingTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="9f0-Bh-l8z">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="加密" id="iSI-W4-F9p">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="Lmt-qa-DPa">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Lmt-qa-DPa" id="GEj-ae-L3S">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="oCz-ZD-pOZ">
+                                                    <rect key="frame" x="-25" y="-15" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="encryptApp:" destination="Q7j-1B-byB" eventType="valueChanged" id="Vua-hZ-Hpe"/>
+                                                        <segue destination="oiD-ap-xvd" kind="show" id="A77-QQ-trM"/>
+                                                    </connections>
+                                                </switch>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="加密应用程序" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AtZ-Nj-vKH">
+                                                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="103" id="uN8-B0-Cx3"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="uN8-B0-Cx3"/>
+                                                        </mask>
+                                                    </variation>
+                                                    <variation key="widthClass=compact">
+                                                        <mask key="constraints">
+                                                            <include reference="uN8-B0-Cx3"/>
+                                                        </mask>
+                                                    </variation>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="AtZ-Nj-vKH" firstAttribute="leading" secondItem="GEj-ae-L3S" secondAttribute="leadingMargin" constant="-1" id="2TL-VO-6a9"/>
+                                                <constraint firstItem="oCz-ZD-pOZ" firstAttribute="top" secondItem="GEj-ae-L3S" secondAttribute="topMargin" constant="-2" id="4A1-wT-25R"/>
+                                                <constraint firstItem="AtZ-Nj-vKH" firstAttribute="centerY" secondItem="oCz-ZD-pOZ" secondAttribute="centerY" id="Ii8-xs-pj2"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="oCz-ZD-pOZ" secondAttribute="bottom" constant="-2" id="Svb-Ha-45E"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="oCz-ZD-pOZ" secondAttribute="trailing" constant="9" id="x2S-Un-Tht"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="subviews">
+                                                    <exclude reference="oCz-ZD-pOZ"/>
+                                                    <exclude reference="AtZ-Nj-vKH"/>
+                                                </mask>
+                                                <mask key="constraints">
+                                                    <exclude reference="2TL-VO-6a9"/>
+                                                    <exclude reference="Ii8-xs-pj2"/>
+                                                    <exclude reference="4A1-wT-25R"/>
+                                                    <exclude reference="Svb-Ha-45E"/>
+                                                    <exclude reference="x2S-Un-Tht"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="widthClass=compact">
+                                                <mask key="subviews">
+                                                    <include reference="oCz-ZD-pOZ"/>
+                                                    <include reference="AtZ-Nj-vKH"/>
+                                                </mask>
+                                                <mask key="constraints">
+                                                    <include reference="2TL-VO-6a9"/>
+                                                    <include reference="Ii8-xs-pj2"/>
+                                                    <include reference="4A1-wT-25R"/>
+                                                    <include reference="Svb-Ha-45E"/>
+                                                    <include reference="x2S-Un-Tht"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="修改密码" id="bFc-KR-nRI">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="4Tc-2z-wGr">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4Tc-2z-wGr" id="u1e-S0-fxy">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="XLm-Vu-TkU">
+                                                    <rect key="frame" x="-25" y="-15" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="changePassword:" destination="Q7j-1B-byB" eventType="valueChanged" id="7f9-j3-aV9"/>
+                                                    </connections>
+                                                </switch>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="修改应用程序的密码" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="siy-xy-zQ7">
+                                                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="XLm-Vu-TkU" secondAttribute="trailing" constant="9" id="Cnq-Gh-uMB"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="XLm-Vu-TkU" secondAttribute="bottom" constant="-2" id="EyP-QR-25X"/>
+                                                <constraint firstItem="XLm-Vu-TkU" firstAttribute="top" secondItem="u1e-S0-fxy" secondAttribute="topMargin" constant="-2" id="VCG-2M-Lp5"/>
+                                                <constraint firstItem="siy-xy-zQ7" firstAttribute="leading" secondItem="u1e-S0-fxy" secondAttribute="leadingMargin" id="mas-9j-bqX"/>
+                                                <constraint firstItem="siy-xy-zQ7" firstAttribute="centerY" secondItem="XLm-Vu-TkU" secondAttribute="centerY" id="z9y-rn-NRQ"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="subviews">
+                                                    <exclude reference="XLm-Vu-TkU"/>
+                                                    <exclude reference="siy-xy-zQ7"/>
+                                                </mask>
+                                                <mask key="constraints">
+                                                    <exclude reference="mas-9j-bqX"/>
+                                                    <exclude reference="z9y-rn-NRQ"/>
+                                                    <exclude reference="Cnq-Gh-uMB"/>
+                                                    <exclude reference="EyP-QR-25X"/>
+                                                    <exclude reference="VCG-2M-Lp5"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="widthClass=compact">
+                                                <mask key="subviews">
+                                                    <include reference="XLm-Vu-TkU"/>
+                                                    <include reference="siy-xy-zQ7"/>
+                                                </mask>
+                                                <mask key="constraints">
+                                                    <include reference="mas-9j-bqX"/>
+                                                    <include reference="z9y-rn-NRQ"/>
+                                                    <include reference="Cnq-Gh-uMB"/>
+                                                    <include reference="EyP-QR-25X"/>
+                                                    <include reference="VCG-2M-Lp5"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="Q7j-1B-byB" id="O0J-3E-2bh"/>
+                            <outlet property="delegate" destination="Q7j-1B-byB" id="etz-Qc-RLN"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="XZM-73-ZDm"/>
+                    <connections>
+                        <outlet property="changePasswordSwitch" destination="XLm-Vu-TkU" id="RJT-2B-xzl"/>
+                        <outlet property="encryptionSwitch" destination="oCz-ZD-pOZ" id="nfe-ZL-tXy"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DJ6-A9-iE0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2781" y="444"/>
+        </scene>
+        <!--输入密码-->
+        <scene sceneID="RKe-LD-r1X">
+            <objects>
+                <viewController title="输入密码" id="oiD-ap-xvd" customClass="PasswordViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pyq-tO-Nkf"/>
+                        <viewControllerLayoutGuide type="bottom" id="NPh-NQ-gLl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Gvc-1M-WTc">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YF1-dY-hTj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3768" y="439"/>
+        </scene>
+        <!--首页-->
+        <scene sceneID="hcc-fd-LcH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="x3u-Hc-Bxp" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="1" title="首页" image="2_utilitynearby.png" id="bdO-gA-PmA"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uXT-B7-NxV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="xdW-ZU-Lec"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EU7-cD-TeL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1995" y="-877"/>
+        </scene>
+        <!--我的-->
+        <scene sceneID="47H-os-gF2">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vZD-RK-4Eb" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="我的" image="2_utilitymyinfoact.png" badgeValue="20" id="BWx-ZB-zOC"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="d1W-t8-qQ7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="M9K-i2-r9L" kind="relationship" relationship="rootViewController" id="Ljo-dg-3fx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Aec-aR-6F0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1995" y="-224"/>
+        </scene>
+        <!--设置-->
+        <scene sceneID="ndm-cf-1aT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WzR-rL-H2z" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="设置" image="2_utilitysearchact.png" id="JCb-MF-byY"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DhU-Em-pRI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="hidesBottomBarWhenPushed" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <segue destination="Q7j-1B-byB" kind="relationship" relationship="rootViewController" id="gol-yI-dlj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1HU-wf-Ovp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2004" y="444"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="2_utilitymyinfoact.png" width="24" height="22"/>
+        <image name="2_utilitynearby.png" width="24" height="22"/>
+        <image name="2_utilitysearchact.png" width="24" height="22"/>
+    </resources>
+</document>

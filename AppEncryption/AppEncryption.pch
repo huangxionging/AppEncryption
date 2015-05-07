@@ -1,0 +1,21 @@
+//
+//  AppEncryption.pch
+//  AppEncryption
+//
+//  Created by huangxiong on 15/4/15.
+//  Copyright (c) 2015年 New_Life. All rights reserved.
+//
+
+#ifndef AppEncryption_AppEncryption_pch
+#define AppEncryption_AppEncryption_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+// 加密应用程序
+#define ENCRYPTION_APP (@"encryption_app")
+
+// 修改密码
+#define CHANGE_PASSWORD (@"change_password")
+
+#endif
