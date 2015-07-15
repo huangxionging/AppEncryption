@@ -124,6 +124,7 @@
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 - (IBAction)changePassword:(UISwitch *)sender {
+    
     BOOL isEncrypt = sender.isOn;
     [[NSUserDefaults standardUserDefaults] setBool: isEncrypt forKey: CHANGE_PASSWORD];
     [[NSUserDefaults standardUserDefaults] synchronize];

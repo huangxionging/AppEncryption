@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F293BBB21B5631450055A3F3 /* HXEncryptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = F293BBB11B5631450055A3F3 /* HXEncryptionView.m */; };
+		F293BBB71B5631700055A3F3 /* CircleNodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = F293BBB41B5631700055A3F3 /* CircleNodeView.m */; };
+		F293BBB81B5631700055A3F3 /* HXLinear.m in Sources */ = {isa = PBXBuildFile; fileRef = F293BBB61B5631700055A3F3 /* HXLinear.m */; };
 		F2A23CC21ADE039400CD1D54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A23CC11ADE039400CD1D54 /* main.m */; };
 		F2A23CC51ADE039400CD1D54 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A23CC41ADE039400CD1D54 /* AppDelegate.m */; };
 		F2A23CC81ADE039400CD1D54 /* AppEncryption.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F2A23CC61ADE039400CD1D54 /* AppEncryption.xcdatamodeld */; };
@@ -39,6 +42,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F293BBB01B5631450055A3F3 /* HXEncryptionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXEncryptionView.h; sourceTree = "<group>"; };
+		F293BBB11B5631450055A3F3 /* HXEncryptionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXEncryptionView.m; sourceTree = "<group>"; };
+		F293BBB31B5631700055A3F3 /* CircleNodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleNodeView.h; sourceTree = "<group>"; };
+		F293BBB41B5631700055A3F3 /* CircleNodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleNodeView.m; sourceTree = "<group>"; };
+		F293BBB51B5631700055A3F3 /* HXLinear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXLinear.h; sourceTree = "<group>"; };
+		F293BBB61B5631700055A3F3 /* HXLinear.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXLinear.m; sourceTree = "<group>"; };
 		F2A23CBC1ADE039400CD1D54 /* AppEncryption.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppEncryption.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2A23CC01ADE039400CD1D54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2A23CC11ADE039400CD1D54 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -119,6 +128,12 @@
 				F2A23CEF1ADE070B00CD1D54 /* SettingTableViewController.m */,
 				F2A23D021ADE619F00CD1D54 /* PasswordViewController.h */,
 				F2A23D031ADE619F00CD1D54 /* PasswordViewController.m */,
+				F293BBB01B5631450055A3F3 /* HXEncryptionView.h */,
+				F293BBB11B5631450055A3F3 /* HXEncryptionView.m */,
+				F293BBB31B5631700055A3F3 /* CircleNodeView.h */,
+				F293BBB41B5631700055A3F3 /* CircleNodeView.m */,
+				F293BBB51B5631700055A3F3 /* HXLinear.h */,
+				F293BBB61B5631700055A3F3 /* HXLinear.m */,
 				F2A23CCC1ADE039400CD1D54 /* Main.storyboard */,
 				F2A23CF11ADE0B8000CD1D54 /* 2_utilitymyinfoact@2x.png */,
 				F2A23CF21ADE0B8000CD1D54 /* 2_utilitymyinfopress@2x.png */,
@@ -271,9 +286,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F293BBB81B5631700055A3F3 /* HXLinear.m in Sources */,
+				F293BBB71B5631700055A3F3 /* CircleNodeView.m in Sources */,
 				F2A23CEA1ADE06E700CD1D54 /* FirstPageViewController.m in Sources */,
 				F2A23CC51ADE039400CD1D54 /* AppDelegate.m in Sources */,
 				F2A23CC21ADE039400CD1D54 /* main.m in Sources */,
+				F293BBB21B5631450055A3F3 /* HXEncryptionView.m in Sources */,
 				F2A23D041ADE619F00CD1D54 /* PasswordViewController.m in Sources */,
 				F2A23CC81ADE039400CD1D54 /* AppEncryption.xcdatamodeld in Sources */,
 				F2A23CF01ADE070B00CD1D54 /* SettingTableViewController.m in Sources */,
@@ -476,6 +494,7 @@
 				F2A23CE41ADE039500CD1D54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F2A23CE51ADE039500CD1D54 /* Build configuration list for PBXNativeTarget "AppEncryptionTests" */ = {
 			isa = XCConfigurationList;
@@ -484,6 +503,7 @@
 				F2A23CE71ADE039500CD1D54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
