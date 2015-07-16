@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F27FE6EB1B578EB8002AD940 /* HXTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F27FE6EA1B578EB8002AD940 /* HXTabBarController.m */; };
 		F293BBB21B5631450055A3F3 /* HXEncryptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = F293BBB11B5631450055A3F3 /* HXEncryptionView.m */; };
 		F293BBB71B5631700055A3F3 /* CircleNodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = F293BBB41B5631700055A3F3 /* CircleNodeView.m */; };
 		F293BBB81B5631700055A3F3 /* HXLinear.m in Sources */ = {isa = PBXBuildFile; fileRef = F293BBB61B5631700055A3F3 /* HXLinear.m */; };
@@ -42,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F27FE6E91B578EB8002AD940 /* HXTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXTabBarController.h; sourceTree = "<group>"; };
+		F27FE6EA1B578EB8002AD940 /* HXTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXTabBarController.m; sourceTree = "<group>"; };
 		F293BBB01B5631450055A3F3 /* HXEncryptionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXEncryptionView.h; sourceTree = "<group>"; };
 		F293BBB11B5631450055A3F3 /* HXEncryptionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXEncryptionView.m; sourceTree = "<group>"; };
 		F293BBB31B5631700055A3F3 /* CircleNodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleNodeView.h; sourceTree = "<group>"; };
@@ -120,6 +123,8 @@
 			children = (
 				F2A23CC31ADE039400CD1D54 /* AppDelegate.h */,
 				F2A23CC41ADE039400CD1D54 /* AppDelegate.m */,
+				F27FE6E91B578EB8002AD940 /* HXTabBarController.h */,
+				F27FE6EA1B578EB8002AD940 /* HXTabBarController.m */,
 				F2A23CE81ADE06E700CD1D54 /* FirstPageViewController.h */,
 				F2A23CE91ADE06E700CD1D54 /* FirstPageViewController.m */,
 				F2A23CEB1ADE06F700CD1D54 /* MyViewController.h */,
@@ -293,6 +298,7 @@
 				F2A23CC21ADE039400CD1D54 /* main.m in Sources */,
 				F293BBB21B5631450055A3F3 /* HXEncryptionView.m in Sources */,
 				F2A23D041ADE619F00CD1D54 /* PasswordViewController.m in Sources */,
+				F27FE6EB1B578EB8002AD940 /* HXTabBarController.m in Sources */,
 				F2A23CC81ADE039400CD1D54 /* AppEncryption.xcdatamodeld in Sources */,
 				F2A23CF01ADE070B00CD1D54 /* SettingTableViewController.m in Sources */,
 				F2A23CED1ADE06F700CD1D54 /* MyViewController.m in Sources */,

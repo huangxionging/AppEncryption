@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "PasswordViewController.h"
 
 @interface AppDelegate ()
 
@@ -37,6 +38,7 @@
     
     if (value == YES) {
         NSLog(@"需要密码");
+        [[NSNotificationCenter defaultCenter] postNotificationName: NOTIFICATION_ENTER_APP object: nil];
     }
     
 }

@@ -44,6 +44,9 @@
     self.view.backgroundColor = [UIColor blackColor];
     
     if (_isEncrypt == YES) {
+        [self setTitle: @"关闭密码"];
+    }
+    else {
         [self setTitle: @"设置新密码"];
     }
     
@@ -128,19 +131,22 @@
     
     NSLog(@"%@", _password);
     
-    if (_isEncrypt == YES) {
+    if (_isEncrypt == NO) {
         
         if (_passwordCount == 1) {
             [self setTitle: @"再次设置密码"];
             _passwordCount++;
-            
             _onceString = _password;
         }
         else {
             
             if ([_password isEqualToString: _onceString] == YES) {
                 [[NSUserDefaults standardUserDefaults] setObject: _password forKey: PASSWORD];
+                
+                [[NSUserDefaults standardUserDefaults] setBool: YES forKey: ENCRYPTION_APP];
                 [[NSUserDefaults standardUserDefaults] synchronize];
+                
+                [self.navigationController popViewControllerAnimated: YES];
             }
             else {
                 _encryptionView.isRed = YES;
@@ -148,9 +154,33 @@
             }
         }
     }
+    else {
+        NSString *password = [[NSUserDefaults standardUserDefaults] objectForKey: PASSWORD];
+        
+        if ([_password isEqualToString: password]) {
+            
+            if (self.navigationController == nil) {
+                [self dismissViewControllerAnimated: YES completion:^{
+                    
+                }];
+            }
+            else {
+                [[NSUserDefaults standardUserDefaults] setBool: NO forKey: ENCRYPTION_APP];
+                [[NSUserDefaults standardUserDefaults] synchronize];
+                [self.navigationController popViewControllerAnimated: YES];
+            }
+            
+        }
+        else {
+            _encryptionView.isRed = YES;
+            [_encryptionView setNeedsDisplay];
+        }
+    }
     
     [self performSelector: @selector(clearEncrypt) withObject: nil afterDelay: 0.5];
 }
+
+
 
 - (void) clearEncrypt {
     

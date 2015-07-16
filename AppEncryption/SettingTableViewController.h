@@ -12,7 +12,7 @@
 
 @property (weak, nonatomic) IBOutlet UISwitch *encryptionSwitch;
 
-- (IBAction)encryptApp:(UISwitch *)sender;
+//- (IBAction)encryptApp:(UISwitch *)sender;
 
 @property (weak, nonatomic) IBOutlet UISwitch *changePasswordSwitch;
 

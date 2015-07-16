@@ -17,8 +17,9 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear: animated];
+    _encryptionSwitch.on = [[NSUserDefaults standardUserDefaults] boolForKey: ENCRYPTION_APP];
     
-  //   self.tabBarController.tabBar.hidden = NO;
+    // self.tabBarController.tabBar.hidden = NO;
 }
 
 - (void) viewWillDisappear:(BOOL)animated
@@ -30,7 +31,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -40,7 +40,7 @@
     
   //  self.hidesBottomBarWhenPushed = YES;
     
-    _encryptionSwitch.on = [[NSUserDefaults standardUserDefaults] boolForKey: ENCRYPTION_APP];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -116,13 +116,13 @@
 }
 */
 
-- (IBAction)encryptApp:(UISwitch *)sender {
-    
-    
-    BOOL isEncrypt = sender.isOn;
-    [[NSUserDefaults standardUserDefaults] setBool: isEncrypt forKey: ENCRYPTION_APP];
-    [[NSUserDefaults standardUserDefaults] synchronize];
-}
+//- (IBAction)encryptApp:(UISwitch *)sender {
+//    
+//    
+////    BOOL isEncrypt = sender.isOn;
+////    [[NSUserDefaults standardUserDefaults] setBool: isEncrypt forKey: ENCRYPTION_APP];
+////    [[NSUserDefaults standardUserDefaults] synchronize];
+//}
 - (IBAction)changePassword:(UISwitch *)sender {
     
     BOOL isEncrypt = sender.isOn;

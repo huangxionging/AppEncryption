@@ -20,4 +20,6 @@
 // 修改密码
 #define CHANGE_PASSWORD (@"change_password")
 
+#define NOTIFICATION_ENTER_APP (@"enterApp")
+
 #endif

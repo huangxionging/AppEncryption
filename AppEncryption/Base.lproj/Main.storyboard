@@ -28,7 +28,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="oeG-az-AnD">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="8hx-Ns-ugi" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="8hx-Ns-ugi" customClass="HXTabBarController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="AYP-hc-UDY">
@@ -58,7 +58,7 @@
         <!--Setting Table View Controller-->
         <scene sceneID="ljV-sy-8Fd">
             <objects>
-                <tableViewController hidesBottomBarWhenPushed="YES" id="Q7j-1B-byB" customClass="SettingTableViewController" sceneMemberID="viewController">
+                <tableViewController id="Q7j-1B-byB" customClass="SettingTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="9f0-Bh-l8z">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -74,7 +74,6 @@
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="oCz-ZD-pOZ">
                                                     <rect key="frame" x="-25" y="-15" width="51" height="31"/>
                                                     <connections>
-                                                        <action selector="encryptApp:" destination="Q7j-1B-byB" eventType="valueChanged" id="Vua-hZ-Hpe"/>
                                                         <segue destination="oiD-ap-xvd" kind="show" id="A77-QQ-trM"/>
                                                     </connections>
                                                 </switch>
