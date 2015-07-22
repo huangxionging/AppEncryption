@@ -25,15 +25,15 @@
     return self;
 }
 
-- (UIImage *) imageWithRect: (CGRect) rect {
-    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
-    
-    CGContextRef ctx = CGBitmapContextCreate(nil, rect.size.width, rect.size.height, 8, 4 * rect.size.width, colorSpace, (CGBitmapInfo)kCGImageAlphaPremultipliedFirst);
-    
-    CGImageRef imageRef = CGBitmapContextCreateImage(ctx);
-    
-    return [UIImage imageWithCGImage: imageRef];
-}
+//- (UIImage *) imageWithRect: (CGRect) rect {
+//    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+//    
+//    CGContextRef ctx = CGBitmapContextCreate(nil, rect.size.width, rect.size.height, 8, 4 * rect.size.width, colorSpace, (CGBitmapInfo)kCGImageAlphaPremultipliedFirst);
+//    
+//    CGImageRef imageRef = CGBitmapContextCreateImage(ctx);
+//    
+//    return [UIImage imageWithCGImage: imageRef];
+//}
 
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
